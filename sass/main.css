@@ -1,4 +1,19 @@
-.logo {
+.header #location {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+.header .explore-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+}
+.header .explore p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+
+header .logo {
   font-family: "Shrikhand", sans-serif;
   font-size: 33px;
   font-weight: 500;

@@ -1,11 +1,15 @@
+@import "layouts/homepage";
+@import "styles/typography";
+
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
 
-.logo {
-    font-family: 'Shrikhand', sans-serif;
-    font-size: 33px;
-    font-weight: 500;
+header {
+    .logo {
+    font-family: $font-primary;
+    font-size: $font-size-logo;
+    font-weight: $font-weight-logo;
+    }
 }
 
-@import "layouts/homepage"
