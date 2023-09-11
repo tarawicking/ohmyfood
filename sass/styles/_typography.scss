@@ -1,10 +1,4 @@
-$font-primary: 'Shrikhand', sans-serif;
-$font-secondary: 'Roboto', sans-serif;
-
-$font-size-heading: 22px;
-$font-size-body: 15px;
-
-$font-weight-body: 600;
+@import "styles/variables";
 
 .header {
     #location {
