@@ -1,15 +1,7 @@
 @import "layouts/homepage";
 @import "styles/typography";
+@import "styles/buttons";
+@import "styles/variables";
 
-$primary-color: #9356DC;
-$secondary-color: #FF79DA;
-$tertiary-color: #99E2D0;
 
-header {
-    .logo {
-    font-family: $font-primary;
-    font-size: $font-size-logo;
-    font-weight: $font-weight-logo;
-    }
-}
 
