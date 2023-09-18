@@ -24,13 +24,14 @@
 .header #location {
   background-color: #e6e6e6;
   box-shadow: inset 0 5px 5px -5px #a9a9a9;
-  color: #333333;
-  font-size: 16px;
   width: 100%;
   padding: 15px 0 15px 0;
 }
 .header #location .location-icon {
   margin-right: 10px;
+}
+.header .explore-title {
+  padding: 23px 0 23px 0;
 }
 .header p span {
   display: block;
@@ -58,6 +59,7 @@
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 600;
+  color: #333333;
 }
 .header .explore-title {
   font-family: "Roboto", sans-serif;
