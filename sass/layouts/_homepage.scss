@@ -11,15 +11,30 @@
     text-align: center;
 
     .logo-container {
-        box-shadow: 0 4px 2px -2px grey;
+        box-shadow: 0 4px 2px -2px $shadow-color;
+        width: 110%;
         }
 
     .site-logo {
-        width: 45%;
+        width: 40%;
+        padding: 20px 0 10px 0;
     }
     
     .site-logo-link a {
         @include flexcenter();
+    }
+
+    #location {
+        background-color: $location-bg-color;
+        box-shadow: inset 0 5px 5px -5px $shadow-color;
+        color: $location-color;
+        font-size: $font-size-body;
+        width: 100%;
+        padding: 15px 0 15px 0;
+
+        .location-icon {
+            margin-right: 10px;
+        }
     }
 
     p {

@@ -8,16 +8,29 @@
   text-align: center;
 }
 .header .logo-container {
-  box-shadow: 0 4px 2px -2px grey;
+  box-shadow: 0 4px 2px -2px #a9a9a9;
+  width: 110%;
 }
 .header .site-logo {
-  width: 45%;
+  width: 40%;
+  padding: 20px 0 10px 0;
 }
 .header .site-logo-link a {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.header #location {
+  background-color: #e6e6e6;
+  box-shadow: inset 0 5px 5px -5px #a9a9a9;
+  color: #333333;
+  font-size: 16px;
+  width: 100%;
+  padding: 15px 0 15px 0;
+}
+.header #location .location-icon {
+  margin-right: 10px;
 }
 .header p span {
   display: block;
@@ -43,7 +56,7 @@
 
 .header #location {
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
 }
 .header .explore-title {
@@ -53,5 +66,5 @@
 }
 .header .explore p {
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
 }/*# sourceMappingURL=main.css.map */
