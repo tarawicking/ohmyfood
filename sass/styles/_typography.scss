@@ -1,7 +1,7 @@
 .header {
     #location {
         font-family: $font-secondary;
-        font-size: $font-size-body;
+        font-size: $font-size-small;
         font-weight: $font-weight-body;
         color: $location-color;
     }
@@ -13,5 +13,13 @@
     .explore p {
         font-family: $font-secondary;
         font-size: $font-size-body;
+        font-weight: $font-weight-light;
+    }
+
+    .explore-btn {
+        font-family: $font-secondary;
+        font-size: $font-size-small;
+        font-weight: $font-weight-mid;
+        color: #ffffff;
     }
 }
