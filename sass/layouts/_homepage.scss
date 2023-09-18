@@ -1,5 +1,3 @@
-@import "styles/variables";
-
 @mixin flexcenter {
     display: flex;
     justify-content: center;
@@ -9,9 +7,27 @@
 
 .header {
     @include flexcenter();
+
+    text-align: center;
+
+    .logo-container {
+        box-shadow: 0 4px 2px -2px grey;
+        }
+
+    .site-logo {
+        width: 45%;
+    }
+    
+    .site-logo-link a {
+        @include flexcenter();
+    }
+
+    p {
+        span {
+            display: block;
+        }
+    }    
 }
-
-
 
 .how-list {
     counter-reset: item;

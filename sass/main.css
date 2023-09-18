@@ -1,8 +1,26 @@
+/* Colours */
+/* Typography */
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
+}
+.header .logo-container {
+  box-shadow: 0 4px 2px -2px grey;
+}
+.header .site-logo {
+  width: 45%;
+}
+.header .site-logo-link a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header p span {
+  display: block;
 }
 
 .how-list {
@@ -14,7 +32,7 @@
 }
 .how-list li:before {
   border-radius: 100%;
-  background-color: lightskyblue;
+  background-color: #9356DC;
   width: 24px;
   height: 24px;
   display: inline-flex;
@@ -36,10 +54,4 @@
 .header .explore p {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
-}
-
-header .logo {
-  font-family: "Shrikhand", sans-serif;
-  font-size: 33px;
-  font-weight: 500;
 }/*# sourceMappingURL=main.css.map */
