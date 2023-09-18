@@ -25,13 +25,21 @@
   background-color: #e6e6e6;
   box-shadow: inset 0 5px 5px -5px #a9a9a9;
   width: 100%;
-  padding: 15px 0 15px 0;
+  padding: 15px 25px 15px 0;
 }
 .header #location .location-icon {
-  margin-right: 10px;
+  margin-right: 15px;
 }
 .header .explore-title {
   padding: 23px 0 23px 0;
+}
+.header .explore {
+  background-color: #f2f2f2;
+  width: 100%;
+}
+.header .explore-btn {
+  box-shadow: 0 4px 7px 2px #a9a9a9;
+  margin: 20px 0 55px 0;
 }
 .header p span {
   display: block;
@@ -57,7 +65,7 @@
 
 .header #location {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   color: #333333;
 }
@@ -69,4 +77,19 @@
 .header .explore p {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  font-weight: 300;
+}
+.header .explore-btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.explore-btn {
+  border-style: none;
+  border-radius: 30px;
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  width: 210px;
+  height: 50px;
 }/*# sourceMappingURL=main.css.map */
