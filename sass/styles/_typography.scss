@@ -23,3 +23,34 @@
         color: #ffffff;
     }
 }
+
+.how-it-works {
+    .how-title {
+        font-family: $font-secondary;
+        font-size: $font-size-heading;
+    }
+    .how-list {
+        font-family: $font-secondary;
+        font-size: $font-size-small;
+        font-weight: $font-weight-body;
+    }
+}
+
+.restaurants {
+    .restaurants-title {
+        font-family: $font-secondary;
+        font-size: $font-size-heading;
+    }
+    .base-card {
+        font-family: $font-secondary;
+    }
+        & a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        & p {
+            font-weight: $font-weight-light;
+            font-size: $font-size-small;
+        }
+}
