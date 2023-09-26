@@ -1,15 +1,20 @@
 /* Colours */
 /* Typography */
+* {
+  box-sizing: border-box;
+}
+
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
   text-align: center;
 }
 .header .logo-container {
   box-shadow: 0 4px 2px -2px #a9a9a9;
-  width: 110%;
+  width: 100%;
 }
 .header .site-logo {
   width: 40%;
@@ -45,15 +50,37 @@
   display: block;
 }
 
+.how-it-works .how-title {
+  padding: 40px 0 15px 20px;
+  margin: 0;
+}
+
 .how-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   counter-reset: item;
   list-style: none;
+  padding: 0 0 30px 20px;
+  gap: 25px;
 }
 .how-list li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   counter-increment: item;
+  gap: 10px;
+  padding-left: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px 2px #e6e6e6;
+  width: 310px;
+  height: 65px;
+  position: relative;
 }
 .how-list li:before {
   border-radius: 100%;
+  color: #ffffff;
   background-color: #9356DC;
   width: 24px;
   height: 24px;
@@ -61,6 +88,77 @@
   justify-content: center;
   align-items: center;
   content: counter(item);
+  position: absolute;
+  left: -12px;
+}
+.how-list .list-icon {
+  color: grey;
+}
+
+.restaurants {
+  background-color: #f2f2f2;
+  padding-bottom: 60px;
+}
+.restaurants h3 {
+  padding: 40px 0 15px 20px;
+  margin: 0;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.base-card {
+  border-radius: 15px;
+  overflow: hidden;
+  width: 340px;
+  height: 230px;
+  max-height: 230px;
+  position: relative;
+  box-shadow: 0 4px 7px 2px #a9a9a9;
+}
+.base-card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  max-height: 160px;
+  height: 160px;
+}
+.base-card .card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.base-card .card-info {
+  padding: 10px 12px;
+}
+.base-card h4 {
+  margin: 0;
+}
+.base-card p {
+  padding-top: 5px;
+  margin: 0;
+}
+.base-card .full-heart {
+  display: none;
+}
+.base-card .heart-icons {
+  font-size: 25px;
+  padding: 15px 20px;
+}
+
+.new-overlay {
+  position: absolute;
+  top: 10px;
+  color: #227763;
+  background-color: #99E2D0;
+  right: 20px;
+  padding: 5px 23px;
+  border-radius: 2px;
 }
 
 .header #location {
@@ -84,6 +182,37 @@
   font-size: 15px;
   font-weight: 500;
   color: #ffffff;
+}
+
+.how-it-works .how-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+}
+.how-it-works .how-list {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.restaurants .restaurants-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+}
+.restaurants .base-card {
+  font-family: "Roboto", sans-serif;
+}
+.restaurants a {
+  text-decoration: none;
+  color: #000000;
+}
+.restaurants p {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.new-overlay {
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .explore-btn {

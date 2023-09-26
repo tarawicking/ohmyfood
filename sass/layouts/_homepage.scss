@@ -11,6 +11,12 @@
     align-items: center;
 }
 
+@mixin cardflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -114,8 +120,8 @@
 }
 
 .restaurants {
-    @include flexcenter();
     background-color: $body-bg-color;
+    padding-bottom: 60px;
 
     & h3 {
         padding: $header-padding;
@@ -123,13 +129,19 @@
     }
 }
 
+.gallery {
+    @include flexcenter();
+    gap: 20px;
+}
+
 .base-card {
-    border-radius: 24px;
+    border-radius: $corner-radius-default;
     overflow: hidden;
     width: 340px;
-    height: 240px;
-    max-height: 240px;
-    position: relative; 
+    height: 230px;
+    max-height: 230px;
+    position: relative;
+    box-shadow: 0 4px 7px 2px $shadow-color;
 
     & img {
         object-fit: cover;
@@ -137,14 +149,40 @@
         max-height: 160px;
         height: 160px;
     }
+
+    .card-container {
+        @include cardflex();
+    }
+
+    .card-info {
+        padding: 10px 12px;
+    }
+
+    & h4 {
+        margin: 0;
+    }
+
+    & p {
+        padding-top: 5px;
+        margin: 0;
+    }
+
+    .full-heart {
+        display: none;
+    }
+
+    .heart-icons {
+        font-size: 25px;
+        padding: 15px 20px;
+    }
 }
 
 .new-overlay {
     position: absolute;
     top: 10px;
-    color: white;
+    color: #227763;
     background-color: $tertiary-color;
     right: 20px;
-    padding: 5px 8px;
-    border-radius: 5px;
+    padding: 5px 23px;
+    border-radius: 2px;
 }
