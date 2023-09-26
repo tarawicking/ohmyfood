@@ -29,15 +29,7 @@
     .logo-container {
         box-shadow: 0 4px 2px -2px $shadow-color;
         width: 100%;
-    }
-
-    .site-logo {
-        width: 40%;
-        padding: 20px 0 10px 0;
-    }
-
-    .site-logo-link a {
-        @include flexcenter();
+        padding: 15px;
     }
 
     #location {

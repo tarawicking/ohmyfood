@@ -1,4 +1,10 @@
 .header {
+    .main-logo {
+        font-family: $font-primary;
+        font-size: 30px;
+        color: #000000;
+        text-decoration: none;
+    }
     #location {
         font-family: $font-secondary;
         font-size: $font-size-small;
@@ -58,4 +64,11 @@
 .new-overlay {
     font-size: 12px;
     font-weight: $font-weight-mid;
+}
+
+.footer {
+    .footer-logo {
+        font-family: $font-primary;
+        color: #ffffff;
+    }
 }

@@ -15,16 +15,7 @@
 .header .logo-container {
   box-shadow: 0 4px 2px -2px #a9a9a9;
   width: 100%;
-}
-.header .site-logo {
-  width: 40%;
-  padding: 20px 0 10px 0;
-}
-.header .site-logo-link a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  padding: 15px;
 }
 .header #location {
   background-color: #e6e6e6;
@@ -161,6 +152,12 @@
   border-radius: 2px;
 }
 
+.header .main-logo {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 30px;
+  color: #000000;
+  text-decoration: none;
+}
 .header #location {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
@@ -213,6 +210,11 @@
 .new-overlay {
   font-size: 12px;
   font-weight: 500;
+}
+
+.footer .footer-logo {
+  font-family: "Shrikhand", sans-serif;
+  color: #ffffff;
 }
 
 .explore-btn {
