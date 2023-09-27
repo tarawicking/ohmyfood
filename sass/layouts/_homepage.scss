@@ -178,3 +178,29 @@
     padding: 5px 23px;
     border-radius: 2px;
 }
+
+.ohmyfood-footer {
+    background-color: $location-color;
+    padding: 20px;
+
+    & ul {
+        margin: 0;
+        list-style: none;
+        padding-left: 0;
+        padding-top: 15px;
+        line-height: 25px;
+
+        .list-flex-container {
+            @include flexhorizontal(flex-start);
+
+            i {
+                font-size: 11px;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                left: -5px;
+            }
+        }
+    }
+}

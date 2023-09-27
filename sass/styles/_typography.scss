@@ -66,9 +66,19 @@
     font-weight: $font-weight-mid;
 }
 
-.footer {
+.ohmyfood-footer {
     .footer-logo {
         font-family: $font-primary;
         color: #ffffff;
+        text-decoration: none;
+    }
+    & ul {
+        font-family: $font-secondary;
+        font-size: $font-size-small;
+        color:#ffffff;
+    }
+    & a {
+        color: #ffffff;
+        text-decoration: none;
     }
 }

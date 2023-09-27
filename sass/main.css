@@ -152,6 +152,31 @@
   border-radius: 2px;
 }
 
+.ohmyfood-footer {
+  background-color: #333333;
+  padding: 20px;
+}
+.ohmyfood-footer ul {
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+  padding-top: 15px;
+  line-height: 25px;
+}
+.ohmyfood-footer ul .list-flex-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.ohmyfood-footer ul .list-flex-container i {
+  font-size: 11px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -5px;
+}
+
 .header .main-logo {
   font-family: "Shrikhand", sans-serif;
   font-size: 30px;
@@ -212,9 +237,19 @@
   font-weight: 500;
 }
 
-.footer .footer-logo {
+.ohmyfood-footer .footer-logo {
   font-family: "Shrikhand", sans-serif;
   color: #ffffff;
+  text-decoration: none;
+}
+.ohmyfood-footer ul {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+}
+.ohmyfood-footer a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .explore-btn {
