@@ -252,10 +252,47 @@
   text-decoration: none;
 }
 
+/* Bastille */
+.bastille-header .main-logo {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 30px;
+  color: #000000;
+  text-decoration: none;
+}
+
 .explore-btn {
   border-style: none;
   border-radius: 30px;
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
   width: 210px;
   height: 50px;
+}
+
+.bastille-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.arrow {
+  font-size: 20px;
+}
+.arrow a {
+  color: #333333;
+  text-decoration: none;
+}
+
+.menu-logo {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.menu-image {
+  width: 100%;
+}
+
+.bastille-title {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }/*# sourceMappingURL=main.css.map */

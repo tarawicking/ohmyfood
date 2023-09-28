@@ -1,0 +1,28 @@
+@mixin flexhorizontal($justification: space-between) {
+    display: flex;
+    justify-content: $justification;
+    align-items: center;
+}
+
+.bastille-header {
+    @include flexhorizontal();
+    padding: 15px;
+  }
+  
+  .arrow {
+    font-size: 20px;
+       & a {
+        color: $location-color;
+        text-decoration: none;
+       }
+  }
+  
+  .menu-logo {
+    text-align: center;
+    flex-grow: 1;
+  }
+
+.menu-image {
+    width:100%;
+}
+
