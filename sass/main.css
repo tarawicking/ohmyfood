@@ -290,6 +290,11 @@
   box-shadow: 0 4px 7px 2px #cccccc;
 }
 
+.explore-btn:hover {
+  background-image: linear-gradient(to bottom right, #ff99e2, #bb95ea);
+  box-shadow: 0 4px 7px 2px #a9a9a9;
+}
+
 .order-button {
   border-style: none;
   border-radius: 30px;
@@ -297,6 +302,11 @@
   width: 210px;
   height: 50px;
   box-shadow: 0 4px 7px 2px #cccccc;
+}
+
+.order-button:hover {
+  background-image: linear-gradient(to bottom right, #ff99e2, #bb95ea);
+  box-shadow: 0 4px 7px 2px #a9a9a9;
 }
 
 .bastille-header {
