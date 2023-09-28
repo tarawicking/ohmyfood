@@ -5,17 +5,20 @@
         color: #000000;
         text-decoration: none;
     }
+
     #location {
         font-family: $font-secondary;
         font-size: $font-size-small;
         font-weight: $font-weight-body;
         color: $location-color;
     }
+
     .explore-title {
         font-family: $font-secondary;
         font-size: $font-size-heading;
         font-weight: $font-weight-body;
     }
+
     .explore p {
         font-family: $font-secondary;
         font-size: $font-size-body;
@@ -35,6 +38,7 @@
         font-family: $font-secondary;
         font-size: $font-size-heading;
     }
+
     .how-list {
         font-family: $font-secondary;
         font-size: $font-size-small;
@@ -47,18 +51,20 @@
         font-family: $font-secondary;
         font-size: $font-size-heading;
     }
+
     .base-card {
         font-family: $font-secondary;
     }
-        & a {
-            text-decoration: none;
-            color: #000000;
-        }
 
-        & p {
-            font-weight: $font-weight-light;
-            font-size: $font-size-small;
-        }
+    & a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    & p {
+        font-weight: $font-weight-light;
+        font-size: $font-size-small;
+    }
 }
 
 .new-overlay {
@@ -72,11 +78,13 @@
         color: #ffffff;
         text-decoration: none;
     }
+
     & ul {
         font-family: $font-secondary;
         font-size: $font-size-small;
-        color:#ffffff;
+        color: #ffffff;
     }
+
     & a {
         color: #ffffff;
         text-decoration: none;
@@ -92,4 +100,39 @@
         color: #000000;
         text-decoration: none;
     }
+}
+
+.bastille-menu {
+
+    .bastille-title {
+        font-family: $font-primary;
+        font-size: $font-size-menu;
+        font-weight: $font-weight-body;
+    }
+
+    h2 {
+        font-family: $font-secondary;
+        font-weight: $font-weight-light;
+        font-size: $font-size-body;
+    }
+
+    h3 {
+        font-family: $font-secondary;
+    }
+
+    p {
+        font-family: $font-secondary;
+    }
+
+    .price {
+        font-weight: $font-weight-body;
+    }
+
+    .order-button {
+        font-family: $font-secondary;
+        font-size: $font-size-small;
+        font-weight: $font-weight-mid;
+        color: #ffffff;
+    }
+
 }

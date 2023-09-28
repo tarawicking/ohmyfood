@@ -1,28 +1,111 @@
 @mixin flexhorizontal($justification: space-between) {
-    display: flex;
-    justify-content: $justification;
-    align-items: center;
+  display: flex;
+  justify-content: $justification;
+  align-items: center;
+}
+
+@mixin flexstart {
+  display: flex;
+  align-self: flex-start;
+  justify-content: space-between;
+}
+
+@mixin cardflex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@mixin flexcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .bastille-header {
-    @include flexhorizontal();
-    padding: 15px;
-  }
-  
-  .arrow {
-    font-size: 20px;
-       & a {
-        color: $location-color;
-        text-decoration: none;
-       }
-  }
-  
-  .menu-logo {
-    text-align: center;
-    flex-grow: 1;
-  }
-
-.menu-image {
-    width:100%;
+  @include flexhorizontal();
+  padding: 15px;
 }
 
+.arrow {
+  font-size: 20px;
+
+  & a {
+    color: $location-color;
+    text-decoration: none;
+  }
+}
+
+.menu-logo {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.menu-image {
+  width: 100%;
+}
+
+.bastille-menu {
+  padding-bottom: 100px;
+
+  h1 {
+    @include flexstart();
+    padding: $header-padding;
+    margin: 0;
+    width: 90%;
+
+    & .full-heart {
+      display: none;
+    }
+  }
+
+  h2 {
+    padding: 10px 20px;
+
+    & .border-text {
+      border-bottom: solid 2px $tertiary-color;
+      padding-bottom: 5px;
+    }
+  }
+
+  .food-card-container {
+    @include flexcenter();
+    gap: 10px;
+
+    .food-card {
+      @include cardflex();
+      margin: 0;
+      width: 90%;
+      box-shadow: 0 4px 10px 2px $shadow-light;
+      border-radius: $corner-radius-default;
+      padding: 10px;
+      line-height: 25px;
+
+      .tick {
+        display: none;
+      }
+
+      .card-title {
+        margin: 0;
+      }
+
+      .card-desc {
+        margin: 0;
+      }
+
+      .price {
+        margin: 0;
+        padding-top: 25px;
+      }
+
+    }
+
+  }
+
+  .button-container {
+    @include flexcenter();
+    margin-top: 50px;
+  }
+
+}

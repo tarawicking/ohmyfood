@@ -34,7 +34,7 @@
   width: 100%;
 }
 .header .explore-btn {
-  box-shadow: 0 4px 7px 2px #a9a9a9;
+  box-shadow: 0 4px 7px 2px #cccccc;
   margin: 20px 0 55px 0;
 }
 .header p span {
@@ -110,7 +110,7 @@
   height: 230px;
   max-height: 230px;
   position: relative;
-  box-shadow: 0 4px 7px 2px #a9a9a9;
+  box-shadow: 0 4px 7px 2px #cccccc;
 }
 .base-card img {
   -o-object-fit: cover;
@@ -260,12 +260,48 @@
   text-decoration: none;
 }
 
+.bastille-menu .bastille-title {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+.bastille-menu h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+.bastille-menu h3 {
+  font-family: "Roboto", sans-serif;
+}
+.bastille-menu p {
+  font-family: "Roboto", sans-serif;
+}
+.bastille-menu .price {
+  font-weight: 600;
+}
+.bastille-menu .order-button {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
 .explore-btn {
   border-style: none;
   border-radius: 30px;
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
   width: 210px;
   height: 50px;
+  box-shadow: 0 4px 7px 2px #cccccc;
+}
+
+.order-button {
+  border-style: none;
+  border-radius: 30px;
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  width: 210px;
+  height: 50px;
+  box-shadow: 0 4px 7px 2px #cccccc;
 }
 
 .bastille-header {
@@ -290,4 +326,64 @@
 
 .menu-image {
   width: 100%;
+}
+
+.bastille-menu {
+  padding-bottom: 100px;
+}
+.bastille-menu h1 {
+  display: flex;
+  align-self: flex-start;
+  justify-content: space-between;
+  padding: 40px 0 15px 20px;
+  margin: 0;
+  width: 90%;
+}
+.bastille-menu h1 .full-heart {
+  display: none;
+}
+.bastille-menu h2 {
+  padding: 10px 20px;
+}
+.bastille-menu h2 .border-text {
+  border-bottom: solid 2px #99E2D0;
+  padding-bottom: 5px;
+}
+.bastille-menu .food-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.bastille-menu .food-card-container .food-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  width: 90%;
+  box-shadow: 0 4px 10px 2px #cccccc;
+  border-radius: 15px;
+  padding: 10px;
+  line-height: 25px;
+}
+.bastille-menu .food-card-container .food-card .tick {
+  display: none;
+}
+.bastille-menu .food-card-container .food-card .card-title {
+  margin: 0;
+}
+.bastille-menu .food-card-container .food-card .card-desc {
+  margin: 0;
+}
+.bastille-menu .food-card-container .food-card .price {
+  margin: 0;
+  padding-top: 25px;
+}
+.bastille-menu .button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
 }/*# sourceMappingURL=main.css.map */
