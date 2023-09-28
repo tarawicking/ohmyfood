@@ -53,7 +53,6 @@
     }
 
     .explore-btn {
-        box-shadow: 0 4px 7px 2px $shadow-color;
         margin: 20px 0 55px 0;
     }
 
@@ -83,7 +82,7 @@
         counter-increment: item;
         gap: 10px;
         padding-left: 30px;
-        border-radius: 15px;
+        border-radius: $corner-radius-default;
         box-shadow: 0 4px 10px 2px $location-bg-color;
         width: 310px;
         height: 65px;
@@ -133,7 +132,7 @@
     height: 230px;
     max-height: 230px;
     position: relative;
-    box-shadow: 0 4px 7px 2px $shadow-color;
+    box-shadow: 0 4px 7px 2px $shadow-light;
 
     & img {
         object-fit: cover;
