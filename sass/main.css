@@ -164,16 +164,12 @@
 }
 .ohmyfood-footer ul .list-flex-container {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
 }
 .ohmyfood-footer ul .list-flex-container i {
   font-size: 11px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  left: -5px;
+  width: 11px;
+  margin-right: 10px;
 }
 
 .header .main-logo {
