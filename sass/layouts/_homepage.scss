@@ -110,6 +110,14 @@
     }
 }
 
+.list-item:hover {
+    background-color: #f1eafb;
+}
+
+.list-item:hover .list-icon{
+    color: $primary-color;
+}
+
 .restaurants {
     background-color: $body-bg-color;
     padding-bottom: 60px;
@@ -166,6 +174,10 @@
         font-size: 25px;
         padding: 15px 20px;
     }
+}
+
+.base-card:hover {
+    box-shadow: 0 4px 7px 2px $shadow-color;
 }
 
 .new-overlay {

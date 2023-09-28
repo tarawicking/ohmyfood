@@ -85,6 +85,14 @@
   color: grey;
 }
 
+.list-item:hover {
+  background-color: #f1eafb;
+}
+
+.list-item:hover .list-icon {
+  color: #9356DC;
+}
+
 .restaurants {
   background-color: #f2f2f2;
   padding-bottom: 60px;
@@ -139,6 +147,10 @@
 .base-card .heart-icons {
   font-size: 25px;
   padding: 15px 20px;
+}
+
+.base-card:hover {
+  box-shadow: 0 4px 7px 2px #a9a9a9;
 }
 
 .new-overlay {
