@@ -174,7 +174,7 @@
         background-clip: text;
         position: absolute;
         top: 20px;
-        left: 0;
+        left: 1px;
         z-index: 1;
         clip-path: inset(100% 0 0 0);
         transition: clip-path 0.7s;
@@ -191,7 +191,7 @@
     .empty-heart {
         position: absolute;
         top: 20px;
-        left: 0;
+        left: 1px;
         z-index: 2;
     }
 }
