@@ -142,11 +142,38 @@
   margin: 0;
 }
 .base-card .full-heart {
-  display: none;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0.5, #FF79DA), color-stop(1, #9356DC));
+  background-image: gradient(linear, left top, right top, color-stop(0.5, #FF79DA), color-stop(1, #9356DC));
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  z-index: 1;
+  -webkit-clip-path: inset(100% 0 0 0);
+          clip-path: inset(100% 0 0 0);
+  transition: -webkit-clip-path 0.7s;
+  transition: clip-path 0.7s;
+  transition: clip-path 0.7s, -webkit-clip-path 0.7s;
 }
 .base-card .heart-icons {
+  display: inline-block;
+  position: relative;
   font-size: 25px;
   padding: 15px 20px;
+  overflow: hidden;
+}
+.base-card .empty-heart {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  z-index: 2;
+}
+
+.heart-icons:hover .full-heart {
+  -webkit-clip-path: inset(0 0 0 0);
+          clip-path: inset(0 0 0 0);
 }
 
 .base-card:hover {
