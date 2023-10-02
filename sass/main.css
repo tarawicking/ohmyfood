@@ -342,11 +342,19 @@
 }
 
 .menu-image {
+  position: relative;
   width: 100%;
 }
 
 .bastille-menu {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  background-color: white;
+  width: 100%;
   padding-bottom: 100px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
 }
 .bastille-menu h1 {
   display: flex;
@@ -403,4 +411,10 @@
   align-items: center;
   flex-direction: column;
   margin-top: 50px;
+}
+
+.menu-footer {
+  position: absolute;
+  top: 215%;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
