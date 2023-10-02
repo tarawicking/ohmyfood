@@ -114,33 +114,81 @@
       border-radius: $corner-radius-default;
       padding: 10px;
       line-height: 25px;
+      position: relative;
+      overflow: hidden;
+    }
 
-      .tick {
-        display: none;
-      }
+    .left-text {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
 
-      .card-title {
-        margin: 0;
-      }
-
+      .card-title,
       .card-desc {
-        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
+    }
 
-      .price {
-        margin: 0;
-        padding-top: 25px;
-      }
+    .right-text {
+      float: left;
+      text-align: right;
+      position: relative;
+    }
 
+    .tick-container {
+      background-color: #99E2D0;
+      position: absolute;
+      top: 28px;
+      right: 0;
+      left: 50px;
+      opacity: 0;
+      transform: translateY(-50%);
+      transition: right 0.3s, opacity 0.3s;
+      padding: 30px 40px 30px 20px;
+    }
+
+    .tick {
+      font-size: 19px;
+      color: white;
+      transition: transform 0.5s ease;
+    }
+
+    .card-title {
+      margin: 0;
+    }
+
+    .card-desc {
+      margin: 0;
+    }
+
+    .price {
+      margin: 0;
+      padding-top: 25px;
+      transition: margin-right 0.3s;
     }
 
   }
 
-  .button-container {
-    @include flexcenter();
-    margin-top: 50px;
-  }
+}
 
+.food-card:hover .tick-container {
+  right: 10px;
+  opacity: 1;
+}
+
+.food-card:hover .tick {
+  transform: rotate(360deg);
+}
+
+.food-card:hover .price {
+  margin-right: 70px;
+}
+
+.button-container {
+  @include flexcenter();
+  margin-top: 50px;
 }
 
 .heart-icons:hover .full-heart {
