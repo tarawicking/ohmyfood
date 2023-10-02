@@ -64,7 +64,32 @@
     width: 90%;
 
     & .full-heart {
-      display: none;
+      background-image: -webkit-gradient(linear, left top, right top, color-stop(.5, $secondary-color), color-stop(1, $primary-color));
+      background-image: gradient(linear, left top, right top, color-stop(0.5, $secondary-color), color-stop(1, $primary-color));
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      position: absolute;
+      top: 3px;
+      left: 1px;
+      z-index: 1;
+      clip-path: inset(100% 0 0 0);
+      transition: clip-path 0.7s;
+    }
+
+    .heart-icons {
+      display: inline-block;
+      position: relative;
+      font-size: 25px;
+      padding: 15px 20px;
+      overflow: hidden;
+    }
+
+    .empty-heart {
+      position: absolute;
+      top: 3px;
+      left: 1px;
+      z-index: 2;
     }
   }
 
@@ -116,6 +141,10 @@
     margin-top: 50px;
   }
 
+}
+
+.heart-icons:hover .full-heart {
+  clip-path: inset(0 0 0 0);
 }
 
 .menu-footer {

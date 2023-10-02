@@ -149,7 +149,7 @@
   background-clip: text;
   position: absolute;
   top: 20px;
-  left: 0;
+  left: 1px;
   z-index: 1;
   -webkit-clip-path: inset(100% 0 0 0);
           clip-path: inset(100% 0 0 0);
@@ -167,7 +167,7 @@
 .base-card .empty-heart {
   position: absolute;
   top: 20px;
-  left: 0;
+  left: 1px;
   z-index: 2;
 }
 
@@ -392,7 +392,33 @@
   width: 90%;
 }
 .bastille-menu h1 .full-heart {
-  display: none;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0.5, #FF79DA), color-stop(1, #9356DC));
+  background-image: gradient(linear, left top, right top, color-stop(0.5, #FF79DA), color-stop(1, #9356DC));
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  position: absolute;
+  top: 3px;
+  left: 1px;
+  z-index: 1;
+  -webkit-clip-path: inset(100% 0 0 0);
+          clip-path: inset(100% 0 0 0);
+  transition: -webkit-clip-path 0.7s;
+  transition: clip-path 0.7s;
+  transition: clip-path 0.7s, -webkit-clip-path 0.7s;
+}
+.bastille-menu h1 .heart-icons {
+  display: inline-block;
+  position: relative;
+  font-size: 25px;
+  padding: 15px 20px;
+  overflow: hidden;
+}
+.bastille-menu h1 .empty-heart {
+  position: absolute;
+  top: 3px;
+  left: 1px;
+  z-index: 2;
 }
 .bastille-menu h2 {
   padding: 10px 20px;
@@ -438,6 +464,11 @@
   align-items: center;
   flex-direction: column;
   margin-top: 50px;
+}
+
+.heart-icons:hover .full-heart {
+  -webkit-clip-path: inset(0 0 0 0);
+          clip-path: inset(0 0 0 0);
 }
 
 .menu-footer {
