@@ -447,6 +447,31 @@
   position: relative;
   overflow: hidden;
 }
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.bastille-menu .food-card-container .squid-card,
+.bastille-menu .food-card-container .scallop-card,
+.bastille-menu .food-card-container .floral-card {
+  animation: fadeInUp 0.5s ease 0.4s forwards;
+}
+.bastille-menu .food-card-container .veg-soup-card,
+.bastille-menu .food-card-container .magret-card,
+.bastille-menu .food-card-container .lava-card {
+  animation: fadeInUp 0.5s ease 0.6s forwards;
+}
+.bastille-menu .food-card-container .onion-card,
+.bastille-menu .food-card-container .hen-card,
+.bastille-menu .food-card-container .nap-card {
+  animation: fadeInUp 0.5s ease 0.8s forwards;
+}
 .bastille-menu .food-card-container .left-text {
   white-space: nowrap;
   overflow: hidden;
