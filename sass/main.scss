@@ -1,9 +1,9 @@
-@import "styles/variables";
-@import "layouts/homepage";
-@import "styles/typography";
-@import "styles/buttons";
-@import "layouts/bastille";
+@import 'abstracts/_variables';
 
+@import 'base/_typography';
+@import 'base/_buttons';
 
+@import 'pages/_bastille';
+@import 'pages/_homepage';
 
 
