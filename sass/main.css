@@ -337,6 +337,21 @@
   width: 100%;
 }
 
+/* Media Queries */
+/* Desktop Media Query */
+@media screen and (min-width: 993px) {
+  .bastille-menu .food-card-container .food-card {
+    width: 50%;
+  }
+  .bastille-menu h2 {
+    display: flex;
+    justify-content: center;
+  }
+  .ohmyfood-footer {
+    margin-top: 170px;
+  }
+}
+/* Tablet Media Query */
 * {
   box-sizing: border-box;
 }
