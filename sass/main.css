@@ -591,4 +591,42 @@
   font-size: 11px;
   width: 11px;
   margin-right: 10px;
+}
+
+/* Media Queries */
+/* Desktop media query */
+@media screen and (min-width: 993px) {
+  .how-it-works .how-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 0;
+  }
+  .restaurants h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 30px;
+    padding-left: 0;
+  }
+}
+/* Tablet media query */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .how-it-works .how-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 0;
+  }
+  .restaurants h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 30px;
+    padding-left: 0;
+  }
 }/*# sourceMappingURL=main.css.map */

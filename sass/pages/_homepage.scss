@@ -34,7 +34,7 @@
     visibility: visible;
     animation: fadeOut 1s 3s forwards;
     z-index: 999;
-    
+
 }
 
 .loader::after {
@@ -49,9 +49,10 @@
 }
 
 @keyframes loading {
-    from { 
+    from {
         transform: rotate(0turn)
-    } 
+    }
+
     to {
         transform: rotate(1turn)
     }
@@ -61,9 +62,10 @@
     0% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
-        visibility: hidden; 
+        visibility: hidden;
     }
 }
 
@@ -282,4 +284,40 @@
             }
         }
     }
+}
+
+/* Media Queries */
+
+/* Desktop media query */
+
+@media screen and (min-width: 993px) {
+
+    .how-it-works .how-title {
+        @include flexcenter();
+        padding-left: 0;
+    }
+
+    .restaurants h3 {
+        @include flexcenter();
+        padding-bottom: 30px;
+        padding-left: 0;
+    }
+
+}
+
+/* Tablet media query */
+
+@media screen and (min-width:768px) and (max-width: 992px) {
+    
+    .how-it-works .how-title {
+        @include flexcenter();
+        padding-left: 0;
+    }
+
+    .restaurants h3 {
+        @include flexcenter();
+        padding-bottom: 30px;
+        padding-left: 0;
+    }
+
 }
