@@ -352,6 +352,19 @@
   }
 }
 /* Tablet Media Query */
+.bastille-menu .food-card-container .food-card {
+  width: 50%;
+}
+
+.bastille-menu h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.ohmyfood-footer {
+  margin-top: -170px;
+}
+
 * {
   box-sizing: border-box;
 }
