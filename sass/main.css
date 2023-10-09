@@ -559,7 +559,7 @@
 }
 .base-card .empty-heart:hover, .base-card .empty-heart:active {
   opacity: 0;
-  transition: opacity 0.9s forwards;
+  transition: opacity 0.9s;
 }
 
 .heart-icons:hover .full-heart {
