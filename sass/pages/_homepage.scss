@@ -215,8 +215,8 @@
     }
 
     .full-heart {
-        background-image: -webkit-gradient(linear, left top, right top, color-stop(.5, $secondary-color), color-stop(1, $primary-color));
-        background-image: gradient(linear, left top, right top, color-stop(0.5, $secondary-color), color-stop(1, $primary-color));
+        background-image: -webkit-linear-gradient(#FF79DA, #9356DC);
+        background-image: linear-gradient(#FF79DA, #9356DC);
         color: transparent;
         -webkit-background-clip: text;
         background-clip: text;
@@ -241,7 +241,14 @@
         top: 20px;
         left: 1px;
         z-index: 2;
+
+        &:hover,
+        &:active {
+            opacity: 0;
+            transition: opacity 0.9s forwards;
+        }
     }
+
 }
 
 .heart-icons:hover .full-heart {
@@ -308,7 +315,7 @@
 /* Tablet media query */
 
 @media screen and (min-width:768px) and (max-width: 992px) {
-    
+
     .how-it-works .how-title {
         @include flexcenter();
         padding-left: 0;

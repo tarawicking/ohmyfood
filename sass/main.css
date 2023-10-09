@@ -163,9 +163,8 @@
 }
 
 .bastille-menu {
-  position: absolute;
-  top: 40%;
-  right: 0;
+  position: relative;
+  margin-top: -20%;
   background-color: white;
   width: 100%;
   padding-bottom: 100px;
@@ -181,8 +180,7 @@
   width: 90%;
 }
 .bastille-menu h1 .full-heart {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0.5, #FF79DA), color-stop(1, #9356DC));
-  background-image: gradient(linear, left top, right top, color-stop(0.5, #FF79DA), color-stop(1, #9356DC));
+  background-image: linear-gradient(#FF79DA, #9356DC);
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -208,6 +206,10 @@
   top: 3px;
   left: 1px;
   z-index: 2;
+}
+.bastille-menu h1 .empty-heart:hover, .bastille-menu h1 .empty-heart:active {
+  opacity: 0;
+  transition: opacity 0.9s;
 }
 .bastille-menu h2 {
   padding: 10px 20px;
@@ -235,6 +237,8 @@
   line-height: 25px;
   position: relative;
   overflow: hidden;
+  opacity: 0;
+  animation: fadeInUp 0.5s ease forwards;
 }
 @keyframes fadeInUp {
   0% {
@@ -246,20 +250,14 @@
     transform: translateY(0);
   }
 }
-.bastille-menu .food-card-container .squid-card,
-.bastille-menu .food-card-container .scallop-card,
-.bastille-menu .food-card-container .floral-card {
-  animation: fadeInUp 0.5s ease 0.4s forwards;
+.bastille-menu .food-card-container .food-card:nth-child(1) {
+  animation-delay: 0.2s;
 }
-.bastille-menu .food-card-container .veg-soup-card,
-.bastille-menu .food-card-container .magret-card,
-.bastille-menu .food-card-container .lava-card {
-  animation: fadeInUp 0.5s ease 0.6s forwards;
+.bastille-menu .food-card-container .food-card:nth-child(2) {
+  animation-delay: 0.4s;
 }
-.bastille-menu .food-card-container .onion-card,
-.bastille-menu .food-card-container .hen-card,
-.bastille-menu .food-card-container .nap-card {
-  animation: fadeInUp 0.5s ease 0.8s forwards;
+.bastille-menu .food-card-container .food-card:nth-child(3) {
+  animation-delay: 0.6s;
 }
 .bastille-menu .food-card-container .left-text {
   white-space: nowrap;
@@ -331,15 +329,12 @@
           clip-path: inset(0 0 0 0);
 }
 
-.menu-footer {
-  position: absolute;
-  top: 215%;
-  width: 100%;
-}
-
 /* Media Queries */
-/* Desktop Media Query */
-@media screen and (min-width: 993px) {
+/* Desktop and Tablet Media Query */
+@media screen and (min-width: 769px) {
+  .bastille-menu {
+    margin-top: -35%;
+  }
   .bastille-menu .food-card-container .food-card {
     width: 50%;
   }
@@ -347,24 +342,7 @@
     display: flex;
     justify-content: center;
   }
-  .ohmyfood-footer {
-    margin-top: 170px;
-  }
 }
-/* Tablet Media Query */
-.bastille-menu .food-card-container .food-card {
-  width: 50%;
-}
-
-.bastille-menu h2 {
-  display: flex;
-  justify-content: center;
-}
-
-.ohmyfood-footer {
-  margin-top: -170px;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -552,8 +530,7 @@
   margin: 0;
 }
 .base-card .full-heart {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0.5, #FF79DA), color-stop(1, #9356DC));
-  background-image: gradient(linear, left top, right top, color-stop(0.5, #FF79DA), color-stop(1, #9356DC));
+  background-image: linear-gradient(#FF79DA, #9356DC);
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -579,6 +556,10 @@
   top: 20px;
   left: 1px;
   z-index: 2;
+}
+.base-card .empty-heart:hover, .base-card .empty-heart:active {
+  opacity: 0;
+  transition: opacity 0.9s forwards;
 }
 
 .heart-icons:hover .full-heart {
