@@ -23,7 +23,7 @@
   flex-direction: column;
 }
 
-.bastille-header {
+.menu-header {
   @include flexhorizontal();
   padding: 15px;
 }
@@ -47,7 +47,7 @@
   width: 100%;
 }
 
-.bastille-menu {
+.menu-section {
   position: relative;
   margin-top: -20%;
   background-color: white;
@@ -233,15 +233,15 @@
 
 @media screen and (min-width: 769px) {
 
-  .bastille-menu {
+  .menu-section {
     margin-top: -35%;
   }
 
-  .bastille-menu .food-card-container .food-card {
+  .menu-section .food-card-container .food-card {
     width: 50%;
   }
 
-  .bastille-menu h2 {
+  .menu-section h2 {
     display: flex;
     justify-content: center;
   }

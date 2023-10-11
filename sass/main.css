@@ -76,33 +76,33 @@
 }
 
 /* Bastille */
-.bastille-header .main-logo {
+.menu-header .main-logo {
   font-family: "Shrikhand", sans-serif;
   font-size: 30px;
   color: #000000;
   text-decoration: none;
 }
 
-.bastille-menu .bastille-title {
+.menu-section .menu-title {
   font-family: "Shrikhand", sans-serif;
   font-size: 30px;
   font-weight: 600;
 }
-.bastille-menu h2 {
+.menu-section h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 16px;
 }
-.bastille-menu h3 {
+.menu-section h3 {
   font-family: "Roboto", sans-serif;
 }
-.bastille-menu p {
+.menu-section p {
   font-family: "Roboto", sans-serif;
 }
-.bastille-menu .price {
+.menu-section .price {
   font-weight: 600;
 }
-.bastille-menu .order-button {
+.menu-section .order-button {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 500;
@@ -137,7 +137,7 @@
   box-shadow: 0 4px 7px 2px #a9a9a9;
 }
 
-.bastille-header {
+.menu-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -162,7 +162,7 @@
   width: 100%;
 }
 
-.bastille-menu {
+.menu-section {
   position: relative;
   margin-top: -20%;
   background-color: white;
@@ -171,7 +171,7 @@
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
 }
-.bastille-menu h1 {
+.menu-section h1 {
   display: flex;
   align-self: flex-start;
   justify-content: space-between;
@@ -179,7 +179,7 @@
   margin: 0;
   width: 90%;
 }
-.bastille-menu h1 .full-heart {
+.menu-section h1 .full-heart {
   background-image: linear-gradient(#FF79DA, #9356DC);
   color: transparent;
   -webkit-background-clip: text;
@@ -194,38 +194,38 @@
   transition: clip-path 0.7s;
   transition: clip-path 0.7s, -webkit-clip-path 0.7s;
 }
-.bastille-menu h1 .heart-icons {
+.menu-section h1 .heart-icons {
   display: inline-block;
   position: relative;
   font-size: 25px;
   padding: 15px 20px;
   overflow: hidden;
 }
-.bastille-menu h1 .empty-heart {
+.menu-section h1 .empty-heart {
   position: absolute;
   top: 3px;
   left: 1px;
   z-index: 2;
 }
-.bastille-menu h1 .empty-heart:hover, .bastille-menu h1 .empty-heart:active {
+.menu-section h1 .empty-heart:hover, .menu-section h1 .empty-heart:active {
   opacity: 0;
   transition: opacity 0.9s;
 }
-.bastille-menu h2 {
+.menu-section h2 {
   padding: 10px 20px;
 }
-.bastille-menu h2 .border-text {
+.menu-section h2 .border-text {
   border-bottom: solid 2px #99E2D0;
   padding-bottom: 5px;
 }
-.bastille-menu .food-card-container {
+.menu-section .food-card-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 10px;
 }
-.bastille-menu .food-card-container .food-card {
+.menu-section .food-card-container .food-card {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -250,32 +250,32 @@
     transform: translateY(0);
   }
 }
-.bastille-menu .food-card-container .food-card:nth-child(1) {
+.menu-section .food-card-container .food-card:nth-child(1) {
   animation-delay: 0.2s;
 }
-.bastille-menu .food-card-container .food-card:nth-child(2) {
+.menu-section .food-card-container .food-card:nth-child(2) {
   animation-delay: 0.4s;
 }
-.bastille-menu .food-card-container .food-card:nth-child(3) {
+.menu-section .food-card-container .food-card:nth-child(3) {
   animation-delay: 0.6s;
 }
-.bastille-menu .food-card-container .left-text {
+.menu-section .food-card-container .left-text {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.bastille-menu .food-card-container .left-text .card-title,
-.bastille-menu .food-card-container .left-text .card-desc {
+.menu-section .food-card-container .left-text .card-title,
+.menu-section .food-card-container .left-text .card-desc {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.bastille-menu .food-card-container .right-text {
+.menu-section .food-card-container .right-text {
   float: left;
   text-align: right;
   position: relative;
 }
-.bastille-menu .food-card-container .tick-container {
+.menu-section .food-card-container .tick-container {
   background-color: #99E2D0;
   position: absolute;
   top: 28px;
@@ -286,18 +286,18 @@
   transition: right 0.3s, opacity 0.3s;
   padding: 30px 40px 30px 20px;
 }
-.bastille-menu .food-card-container .tick {
+.menu-section .food-card-container .tick {
   font-size: 19px;
   color: white;
   transition: transform 0.5s ease;
 }
-.bastille-menu .food-card-container .card-title {
+.menu-section .food-card-container .card-title {
   margin: 0;
 }
-.bastille-menu .food-card-container .card-desc {
+.menu-section .food-card-container .card-desc {
   margin: 0;
 }
-.bastille-menu .food-card-container .price {
+.menu-section .food-card-container .price {
   margin: 0;
   padding-top: 25px;
   transition: margin-right 0.3s;
@@ -332,13 +332,13 @@
 /* Media Queries */
 /* Desktop and Tablet Media Query */
 @media screen and (min-width: 769px) {
-  .bastille-menu {
+  .menu-section {
     margin-top: -35%;
   }
-  .bastille-menu .food-card-container .food-card {
+  .menu-section .food-card-container .food-card {
     width: 50%;
   }
-  .bastille-menu h2 {
+  .menu-section h2 {
     display: flex;
     justify-content: center;
   }
