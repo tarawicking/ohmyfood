@@ -1,0 +1,44 @@
+@mixin flexhorizontal($justification: space-between) {
+    display: flex;
+    justify-content: $justification;
+    align-items: center;
+}
+
+@mixin flexstart {
+    display: flex;
+    align-self: flex-start;
+    justify-content: space-between;
+}
+
+@mixin cardflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@mixin flexcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin flexhorizontal($justification: center) {
+    display: flex;
+    justify-content: $justification;
+    align-items: center;
+}
+
+@mixin button {
+    border-style: none;
+    border-radius: 30px;
+    background-image: linear-gradient(to bottom right, $secondary-color, $primary-color);
+    width: 210px;
+    height: 50px;
+    box-shadow: 0 4px 7px 2px $shadow-light;
+}
+
+@mixin btn-hover {
+    background-image: linear-gradient(to bottom right, $hover-color-light, $hover-color-dark);
+    box-shadow: 0 4px 7px 2px $shadow-color;
+}

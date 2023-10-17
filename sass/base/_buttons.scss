@@ -1,17 +1,3 @@
-@mixin button {
-    border-style: none;
-    border-radius: 30px;
-    background-image: linear-gradient(to bottom right, $secondary-color, $primary-color);
-    width: 210px;
-    height: 50px;
-    box-shadow: 0 4px 7px 2px $shadow-light;
-}
-
-@mixin btn-hover {
-    background-image: linear-gradient(to bottom right, $hover-color-light, $hover-color-dark);
-    box-shadow: 0 4px 7px 2px $shadow-color;
-}
-
 .explore-btn {
     @include button();
 }
