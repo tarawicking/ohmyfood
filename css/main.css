@@ -340,7 +340,7 @@
 
 /* Media Queries */
 /* Desktop and Tablet Media Query */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .menu-section {
     margin-top: -35%;
   }
@@ -617,26 +617,8 @@
 }
 
 /* Media Queries */
-/* Desktop media query */
-@media screen and (min-width: 993px) {
-  .how-it-works .how-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-left: 0;
-  }
-  .restaurants h3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 30px;
-    padding-left: 0;
-  }
-}
-/* Tablet media query */
-@media screen and (min-width: 768px) and (max-width: 992px) {
+/* Desktop and tablet media query */
+@media screen and (min-width: 768px) {
   .how-it-works .how-title {
     display: flex;
     justify-content: center;
